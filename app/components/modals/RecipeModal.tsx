@@ -112,7 +112,7 @@ const RecipeModal = () => {
       let bodyContent = (
         <div className="flex flex-col gap-8">
           <Heading
-            title="Which of these best describes your place?"
+            title="Which of these best describes your recipes or products?"
             subtitle="Pick a category"
           />
           <div 
@@ -144,8 +144,8 @@ const RecipeModal = () => {
         bodyContent=(
             <div className="flex flex-col gap-8">
                 <Heading
-                    title="Add an image to your recipe"
-                    subtitle="show guests what your food looks like!"
+                    title="Add an image to your recipe or products"
+                    subtitle="show guests what your food or product look like!"
                 />
         <ImageUpload
           onChange={(value) => setCustomValue('imageSrc', value)}
@@ -182,7 +182,7 @@ const RecipeModal = () => {
           bodyContent = (
               <div className="flex flex-col gap-8">
                   <Heading
-                      title="Give some instruction for the recipe for the recipe"
+                      title="Give some instruction for the recipe"
                       subtitle="Please make it numerical to make it easier to understand"
                   />
                   <InputLong 
