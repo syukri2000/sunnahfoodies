@@ -6,6 +6,7 @@ import Avatar from "../Avatar";
 import ListingCategory from "./ListingCategory";
 import { useState, useRef } from "react";
 import ReactToPrint from "react-to-print";
+import Giscus from '@giscus/react';
 
 
 
@@ -108,7 +109,21 @@ const handlePrint = () =>{
         </button>}
           content={() => componentRef.current}
         />
-          </div>
+          </div><div className="max-w-5xl mx-auto">
+          <Giscus
+      id="comments"
+      repo="syukri2000/sunnahfoodies"
+      repoId="R_kgDOJy4mKg"
+      category="Announcements"
+      categoryId="DIC_kwDOJy4mKs4CXl43"
+      mapping="pathname"
+      reactionsEnabled="1"
+      emitMetadata="0"
+      inputPosition="bottom"
+      theme="light"
+      lang="en"
+      loading="lazy"
+    /></div>
         </div>
        );
 }
