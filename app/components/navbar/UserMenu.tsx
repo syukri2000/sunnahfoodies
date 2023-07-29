@@ -128,7 +128,15 @@ const UserMenu: React.FC<UserMenuProps> = ({
                             label="Create Recipes or Products"
                         />
                         <hr/>
-                       
+                        <MenuItem
+                            onClick={() => router.push("/guideline")}
+                            label="Guidelines"
+                        />
+                        <MenuItem
+                            onClick={() => router.push("/Terms")}
+                            label="Term&Conditions"
+                        />
+                        <hr/>
                         <MenuItem
                             onClick={signOut}
                             label="Logout"
@@ -144,6 +152,18 @@ const UserMenu: React.FC<UserMenuProps> = ({
                             onClick={registerModal.onOpen}
                             label="Sign Up"
                     />
+                    
+                        <MenuItem
+                            onClick={() => router.push("/guideline")}
+                            label="Guidelines"
+                        />
+                        <MenuItem
+                            onClick={() => router.push("/Terms")}
+                            label="Term&Conditions"
+                        />
+                       
+                        
+                      
                     </>
                     )}
                 </div>
